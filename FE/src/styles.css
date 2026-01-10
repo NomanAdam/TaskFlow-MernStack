@@ -1,0 +1,105 @@
+/* FULL FIXED CSS */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* important */
+  background: #f5f7fc;
+}
+
+.auth-card {
+  width: 420px; /* fixed card size */
+  padding: 35px 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* important */
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Each field wrapper */
+.input-wrapper {
+  width: 100%; /* ensure width stays inside */
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.input-wrapper input {
+  width: 100%; /* ALWAYS stay inside card */
+  padding: 13px 15px;
+  font-size: 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box; /* prevents overflow */
+}
+
+.password-box input {
+  padding-right: 42px !important; /* space for icon */
+}
+
+/* Eye Icon */
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+body {
+  font-family: "Inter", sans-serif !important;
+}
+/* Buttons */
+.btn-primary {
+  width: 100%;
+  background: #3e3894;
+  color: rgb(233, 219, 219);
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* .btn-primary:hover {
+  background: #0b5ed7;
+}
+ */
+/* Bottom link */
+.auth-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.auth-link a,
+.auth-link span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000;
+}
+/* inline error messages for Formik/Yup */
+.error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 6px;
+  text-align: left;
+  padding-left: 4px;
+}
+.auth-field {
+  border: none;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+  /* The input visuals are still controlled by your existing rules, this is minimal */
+}
