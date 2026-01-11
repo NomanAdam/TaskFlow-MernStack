@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://taskflow-mernstack.onrender.com",
+  baseURL: "https://taskflow-mernstack.onrender.com/api",
 });
 
 // Automatically attach token

@@ -31,11 +31,14 @@ const SignUpPage = () => {
 
   const submitSignup = async (values) => {
     try {
-      const res = await fetch("https://taskflow-mernstack.onrender.com/api/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
-      });
+      const res = await fetch(
+        "https://taskflow-mernstack.onrender.com/api/auth/signup",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(values),
+        }
+      );
 
       const data = await res.json();
       setMessage(data.message || "Signup response");
