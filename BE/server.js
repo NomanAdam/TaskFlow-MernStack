@@ -8,7 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 // Middleware cors() lets your frontend (React) talk to your backend (Node/Express) even if both are running on different ports or domains.
-app.use(cors());
+app.use(cors({
+  origin: "https://taskflow-mernstack-1.onrender.com", // Copy your frontend URL exactly from the browser
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true // Important if you are using cookies or specific headers
+}));;
 //Accept JSON and parse the json bodies
 app.use(express.json());
 // Routes sending the request to the correct route file
