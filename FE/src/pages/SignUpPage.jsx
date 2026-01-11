@@ -138,7 +138,7 @@ const SignUpPage = () => {
         </Formik>
 
         <p className="auth-link">
-          Already have an account? <Link to="/">Login</Link>
+          Already have an account? <Link to="/login">Login</Link>
         </p>
 
         <Snackbar

@@ -350,7 +350,7 @@ const TodosPage = () => {
                   <Box
                     sx={{ textAlign: "center", py: 8, color: "text.secondary" }}
                   >
-                    <Typography variant="h6">No tasks found</Typography>
+                    <Typography variant="h6">No task found</Typography>
                   </Box>
                 ) : !isMobile ? (
                   <TableContainer

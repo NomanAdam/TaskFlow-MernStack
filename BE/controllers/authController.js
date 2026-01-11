@@ -33,20 +33,18 @@ const signupController = async (req, res) => {
     await sendEmail(
       email,
       "Your verification code",
-      `<h3>Your OTP is ${otp}</h3>`
+      `<h3>Your TaskFlow OTP is ${otp}</h3>`
     );
 
     res
       .status(201)
       .json({ status: "success", message: "User created. OTP sent to email." });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        status: "Failed",
-        message: "Internal Server Error",
-        error: error.message,
-      });
+    res.status(500).json({
+      status: "Failed",
+      message: "Internal Server Error",
+      error: error.message,
+    });
   }
 };
 // verify otp
@@ -71,13 +69,11 @@ const verifyOtpController = async (req, res) => {
       message: "Email verified. You can login now.",
     });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        status: "failed",
-        message: "Internal Server Error",
-        error: error.message,
-      });
+    res.status(500).json({
+      status: "failed",
+      message: "Internal Server Error",
+      error: error.message,
+    });
   }
 };
 
@@ -112,13 +108,11 @@ const loginController = async (req, res) => {
       data: { email: user.email, username: user.username, token },
     });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        status: "failed",
-        message: "Internal Server Error",
-        error: error.message,
-      });
+    res.status(500).json({
+      status: "failed",
+      message: "Internal Server Error",
+      error: error.message,
+    });
   }
 };
 

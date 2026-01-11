@@ -1,13 +1,10 @@
 require("dotenv").config();
 const express = require("express");
-
 const cors = require("cors");
 require("./config/db");
 const todosRoutes = require("./routes/todosRoutes");
 const authRoutes = require("./routes/authRoutes");
-
 const app = express();
-require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 
 // Middleware cors() lets your frontend (React) talk to your backend (Node/Express) even if both are running on different ports or domains.
