@@ -1,73 +1,14 @@
-# TaskFlow – Full Stack Task Management App
+# 🚀 TaskFlow -- MERN Task Manager App
 
-TaskFlow is a full-stack web application for managing tasks.  
-The project includes a React frontend and a Node.js + Express backend with MongoDB as the database.
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-
-- React
-- JavaScript
-- HTML, CSS
-
-### Backend
-
-- Node.js
-- Express.js
-
-### Database
-
-- MongoDB
+TaskFlow is a full-stack task management application built using the
+MERN stack.\
+It helps users manage daily tasks with secure authentication and OTP
+verification.
 
 ---
 
-## 📁 Project Structure
+## ✨ Features
 
-TaskFlow-FullStack/
-├── FE/ # React frontend
-├── BE/ # Node.js + Express backend
-├── .gitignore
-└── README.md
-
-yaml
-Copy code
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- Node.js
-- npm
-- MongoDB (local or cloud – MongoDB Atlas)
-
----
-
-## 🔹 Backend Setup
-
-```bash
-cd BE
-npm install
-npm run dev
-Backend runs at:
-http://localhost:5000
-
-🔹 Frontend Setup
-bash
-Copy code
-cd FE
-npm install
-npm run dev
-Frontend runs at:
-http://localhost:5173 (or another port)
-
-✨ Key Features
 🔐 Secure Authentication – User login and logout with JWT and email OTP verification using SendGrid
 
 📝 Task Management – Add, edit, and delete tasks with full CRUD support
@@ -86,6 +27,95 @@ http://localhost:5173 (or another port)
 
 🗂 Pagination – Manage multiple pages of tasks efficiently
 
-yaml
-Copy code
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+
+- React.js
+- Redux Toolkit
+- Material UI
+- Axios
+
+**Backend**
+
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication -SendGrid (Email OTP)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm
+- MongoDB (local or cloud – MongoDB Atlas)
+
+---
+
+### 2. Install dependencies
+
+Backend:
+
+```bash
+cd BE
+npm install
 ```
+
+Frontend:
+
+```bash
+cd FE
+npm install
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create `.env` in **BE** folder:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret
+SENDGRID_API_KEY=your_key
+```
+
+---
+
+## ▶️ Run Locally
+
+Backend:
+
+```bash
+npm run dev
+```
+
+Frontend:
+
+```bash
+npm run dev
+```
+
+---
+
+## 👨‍💻 Author
+
+**Noman**\
+Web Developer
+
+- GitHub: https://github.com/NomanAdam\
+- LinkedIn: www.linkedin.com/in/noman-ghaffar-378741270
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star ⭐
