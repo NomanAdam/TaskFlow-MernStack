@@ -15,7 +15,7 @@ const signupController = async (req, res) => {
         .json({ success: false, message: "Email already registered" });
     }
 
-    // hash password
+    // hash password bycrypt is js libray which implement bycrypt hasding algo
     const hashed = await bcrypt.hash(password, 10);
     // generate OTP
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
